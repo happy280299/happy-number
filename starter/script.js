@@ -42,7 +42,6 @@ buttonCheck.addEventListener('click', function() {
     message('Number Correct !!');
     document.querySelector('.number').textContent = afterRadom;
     document.body.style.backgroundColor = '#60b347';
-    document.querySelector('.guess').style.pointerEvents = 'none';
 
     if(Number(numberScore.textContent) > newScore) {
       newScore = Number(numberScore.textContent)
