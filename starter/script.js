@@ -39,9 +39,11 @@ buttonCheck.addEventListener('click', function() {
     message('No between 1 and 20 ')
   }
   else if (afterRadom === valueInput) {
-    message('Number Correct !!')
-    document.querySelector('.number').textContent = afterRadom
-    document.body.style.backgroundColor = '#60b347'
+    message('Number Correct !!');
+    document.querySelector('.number').textContent = afterRadom;
+    document.body.style.backgroundColor = '#60b347';
+    document.querySelector('.guess').style.pointerEvents = 'none';
+
     if(Number(numberScore.textContent) > newScore) {
       newScore = Number(numberScore.textContent)
       highscore.textContent = newScore;
